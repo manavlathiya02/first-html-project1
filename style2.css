@@ -1,0 +1,30 @@
+div {
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 2px solid black;
+    animation-name: coloranimate;
+    border-radius: 50%;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    position: relative; 
+    animation-direction: alternate;
+}
+
+@keyframes coloranimate {
+    from {
+        left: 0px;
+        background-color: yellow;
+    }
+    to {
+        left: 200px;
+        background-color: goldenrod; 
+    }
+}
+
+div:hover {
+    background-color: brown;
+    color: wheat;
+    font-size: 20px;
+}
